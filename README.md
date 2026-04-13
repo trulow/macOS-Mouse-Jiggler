@@ -1,8 +1,4 @@
-# macOS-Mouse-Jiggler
-A simple terminal script to move the mouse and keep you active
-
-
-# 🖱️ Mouse Jiggler
+# 🖱️ macOS-Mouse-Jiggler
 
 ![Platform](https://img.shields.io/badge/platform-macOS-lightgrey?logo=apple)
 ![Language](https://img.shields.io/badge/language-Bash%20%2B%20Swift-orange?logo=swift)
