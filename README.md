@@ -13,7 +13,7 @@ Keeps your Mac awake by nudging the mouse cursor 1px left and right every second
 - **Zero dependencies** — uses Swift from Xcode Command Line Tools
 - **Non-intrusive** — 1px movement won't disrupt normal use
 - **Live feedback** — prints a timestamp each second so you know it's running
-- **Clean exit** — gracefully handles `Ctrl+C`
+- **Clean exit** — gracefully handles `Q or Ctrl+C`
 
 ---
 
@@ -39,7 +39,7 @@ chmod +x mouse_jiggler.sh
 ./mouse_jiggler.sh
 
 # 3. Stop it
-# Press Ctrl+C
+# Press Q or Ctrl+C
 ```
 
 ---
