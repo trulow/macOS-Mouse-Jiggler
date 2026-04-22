@@ -13,18 +13,24 @@ if ! command -v swift &>/dev/null; then
 fi
 
 # Main menu
-echo "🖱️  Mouse Jiggler"
+echo "🖱 Mouse Jiggler"
 echo ""
 echo "  1) 1 hour"
 echo "  2) 3 hours"
 echo "  3) 6 hours"
 echo "  4) 8 hours"
-echo "  5) Always (until Q or Ctrl+C)"
+echo "  5) Always (until cancelled)"
 echo "  9) Clean up leftover temp files"
+echo "  Q) Quit"
 echo ""
-read -rp "Enter your choice [1-5, 9]: " choice
+read -rp "Enter your choice [1-5, 9, Q]: " choice
 
-# Handle cleanup option
+# Handle Q - quit
+if [[ "$choice" == "q" || "$choice" == "Q" ]]; then
+  exit 0
+fi
+
+# Handle option 9 - cleanup
 if [[ "$choice" == "9" ]]; then
   files=(/tmp/mouse_jiggler_*.swift)
   if [[ -e "${files[0]}" ]]; then
